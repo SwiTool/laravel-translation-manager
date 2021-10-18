@@ -319,7 +319,7 @@ class Manager
         }
 
         $this->events->dispatch(new TranslationsExportedEvent());
-        dispatch(new TranslationsExportedEvent());
+        event(new TranslationsExportedEvent());
     }
 
     public function exportAllTranslations()
@@ -335,7 +335,7 @@ class Manager
         }
 
         $this->events->dispatch(new TranslationsExportedEvent());
-        dispatch(new TranslationsExportedEvent());
+        event(new TranslationsExportedEvent());
     }
 
     protected function makeTree($translations, $json = false)
